@@ -1,0 +1,26 @@
+/* 6.2 (3p)
+// Varje post ska ha padding: 20px och margin: 10px
+// Texten på title ska vara bold
+// Text-färgen ska vara grå
+// Backgrundsfärgen på varje post ska vara ljus-grå
+// När man för muspekaren över en post ska bakgrundsfärgen ändras till vit
+// Visa posts i fyra kolumner för desktop och en kolumn för mobil */
+
+.post {
+  padding: 20px;
+  margin: 10px;
+  font-weight: bold;
+  color: gray;
+  background-color: lightgray;
+}
+
+.post:hover {
+  background-color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .post {
+    width: 25%;
+    float: left;
+  }
+}
